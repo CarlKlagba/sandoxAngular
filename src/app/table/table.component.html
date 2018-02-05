@@ -1,0 +1,18 @@
+<table >
+    <thead>
+        <tr>
+            <td>Nom</td>
+            <td>Prénom</td>
+            <td>Age</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let row of rows">
+            <td>{{row.firstName}}</td>
+            <td>{{row.lastName}}</td>
+            <td>{{row.age}}</td>
+        </tr>
+    </tbody>
+</table>
+<div class="choucroute">The total age is {{ totalAge }}</div>
+<ng-content select="app-footer-component"></ng-content>
